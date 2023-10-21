@@ -4,15 +4,15 @@ import { useRouter } from "next/navigation";
 
 const Logo = () => {
     const router = useRouter();
-    return ( <div className="hidden md:flex cursor-pointer flex-row items-center justify-center">
-                <Image
-            alt="Logo"
-            width={100} height={100}
-            layout="intrinsic"
-            src="/images/logo.png"
-            >
-            </Image>
-        </div>);
+    return ( 
+        <Image
+        alt="Logo"
+        width={100} height={100}
+        src="/images/logo.png"
+        className="hidden md:flex cursor-pointer"
+        >
+        </Image>
+        );
 }
  
 export default Logo;
